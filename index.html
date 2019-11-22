@@ -13,15 +13,14 @@
 				COCKTAIL WORLD
 			</div>
 			<div class="header-link">
-				<input type="text" id="data">
-				<a href="#search">
-					<button  id="b" class="button" onclick="search()">Search</button>
+				<a href="" id="m">
+					<button  id="b" class="button" onclick="menu()">Menu</button>
 				</a>
 			</div>	
 		</div>
 	</div>
 	<div class="content">
-		<div class="banner-image">
+		<div id="banner-image">
 			<div class="inner-banner-image">
 				<div class="banner_content">
 					<h1>Cocktail World</h1>
@@ -35,30 +34,33 @@
 		<div class="items">
 			<img src="Images\mocktail.jpg" class="thumbnail">
 			<div class="caption">
-				<a href="#mock-tail">
-					<button id="b1" class="button" onclick="mocktail()">Mocktail</button>
+				<input type="text" id="search-by-name" class="input" placeholder="Search by Name">
+				<br>
+				<a href="#search" id="s">
+					<button id="b1" class="button" onclick="search()">Search</button>
 				</a>
-				<p>Mocktails with taste and style.</p>
 			</div>
 		</div>
 
 		<div class="items">
 			<img src="Images\cocktail.jpg" class="thumbnail">
 			<div class="caption">
-				<a href="#cock-tail">
-					<button id="b1" class="button" onclick="cocktail()">Cocktail</button>
+				<input type="text" id="search-by-first-letter" class="input" placeholder="Search by First Letter">
+				<br>
+				<a href="#first-letter" id="f">
+					<button id="b1" class="button" onclick="firstLetter()">Search</button>
 				</a>
-				<p>Probably the best Cocktails in the world.</p>
 			</div>
 		</div>
 
 		<div class="items">
 			<img src="Images/Champagne.jpg" class="thumbnail">
 			<div class="caption">
-				<a href="#glasses">
-					<button id="b1" class="button" onclick="glass()">Glass Type</button>
+				<input type="text" id="search-by-id" class="input" placeholder="Search by Id"> 
+				<br>
+				<a href="#search-id" id="i">
+					<button id="b1" class="button" onclick="searchById()">Search</button>
 				</a>
-				<p>Delicious in every sip.</p>
 			</div>
 		</div>
 	</div>
@@ -67,20 +69,20 @@
 		
 	</div>
 
-	<div id="mock-tail">
+	<div id="search-id">
 		
 	</div>
 
-	<div id="cock-tail">
+	<div id="first-letter">
 		
 	</div>
 
-	<div id="glasses">
-		
+	<div id="menu">
+
 	</div>
 
-	<footer>
-		<div class="container">
+	<footer id="end">
+		<div class="container" id="footer">
 			<p align="center">Copyright © Vibhushit | Email Us- vibhushitsinghal@gmail.com</p>
 		</div>	
 	</footer>

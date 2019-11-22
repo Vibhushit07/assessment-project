@@ -65,7 +65,7 @@ input[type="text"]
 	min-height: 600px;
 }
 
-.banner-image
+#banner-image
 {
 	padding-bottom: 50px; 
 	margin-bottom: 20px; 
@@ -224,3 +224,22 @@ footer
 .name{
 	text-align: center;
 }
+
+.input{
+	background-color: rgba(0,0,0,0.1);
+	color: rgba(0,0,0);
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+	width: 20em;
+	height: 20px;
+}
+
+::placeholder{
+	color: rgba(0,0,0);
+}
+
+.heading{
+	text-align: center;
+}
+
