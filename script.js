@@ -140,7 +140,17 @@ function searchById() {
 }
 
 function menu(){
-    
+    if(document.getElementById("menu").innerHTML == ""){
+        document.getElementById("search").innerHTML = "";
+        document.getElementById("search-id").innerHTML = "";
+        document.getElementById("first-letter").innerHTML = "";
+    }else{
+        document.getElementById("search").innerHTML = "";
+        document.getElementById("search-id").innerHTML = "";
+        document.getElementById("first-letter").innerHTML = "";
+        document.getElementById("menu").innerHTML = "";
+    }
+
     alcoholic();
     nonAlcoholic();
     ordinaryDrink();
