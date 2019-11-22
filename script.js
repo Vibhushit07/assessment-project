@@ -13,7 +13,6 @@ function search(){
     var d=document.getElementById("data").value.toUpperCase();
     if(d.length==0){
         alert("Seach field is empty");
-        d.focus();
     }else{
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
