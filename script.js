@@ -126,6 +126,7 @@ function searchById() {
                 divCaption.setAttribute("class","caption");
                 var p = document.createElement("p");
                 img.setAttribute("src",obj.drinks[0].strDrinkThumb);
+                console.log(typeof(obj.drinks[0].strDrinkThumb));
                 img.setAttribute("class","images");
                 p.innerHTML = obj.drinks[0].strDrink;
                 divCaption.appendChild(p);
@@ -133,7 +134,7 @@ function searchById() {
                 divItems.appendChild(divCaption);
                 div.appendChild(divItems);
             }
-        }
+        }    
     };
     xhttp.open("GET", "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + value, true);
     xhttp.send();
