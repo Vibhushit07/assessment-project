@@ -21,8 +21,6 @@ function search(){
                 var count = 0;
                 if(obj.drinks != null){     
                     for( i=0;i<obj.drinks.length;i++){
-                        var a = obj.drinks[i].strDrink;
-                        var b = a.toUpperCase();
                         if(count < 6){
                             count++;
                             var divContent = document.createElement("div");
