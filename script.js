@@ -23,7 +23,7 @@ function search(){
                     for( i=0;i<obj.drinks.length;i++){
                         var a = obj.drinks[i].strDrink;
                         var b = a.toUpperCase();
-                        if(b.indexOf(data)>-1 && count < 6){
+                        if(count < 6){
                             count++;
                             var divContent = document.createElement("div");
                             var h1 = document.createElement("h1");
